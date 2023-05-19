@@ -16,8 +16,10 @@ if (number >= 1 && number <= 7)
     if (number == 7) Console.WriteLine("Воскресенье");
 
 }
-else Console.WriteLine("Вы ввели некорректное число");
-
+else
+{
+    Console.WriteLine("Вы ввели некорректное число");
+}
 
 
 
