@@ -17,7 +17,7 @@ int DoThreeDigitNumber(int num)
         }
         return thirdDigitNumber;
     }
-    else return 0; // можно сделать новую булеву функция для проверки что у числа определенное количество цифр (на будущее)
+    else return 0; // можно сделать новую булеву функция для проверки что у числа определенное количество цифр (на будущее (когда-то(наверно)))
 }
 
 int ThirdDigit(int num1)
@@ -33,7 +33,7 @@ int thirdDigitNum = DoThreeDigitNumber(number);
 if (thirdDigitNum > 0)
 {
     int thirdDigitNum1 = ThirdDigit(thirdDigitNum);
-    Console.WriteLine($"Третья цифра числа - {thirdDigitNum1}");
+    Console.WriteLine($"Третья цифра - {thirdDigitNum1}");
 }
 else Console.WriteLine("Третьего числа нет");
 
