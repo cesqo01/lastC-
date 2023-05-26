@@ -26,7 +26,7 @@ string TrueOrFalse(int numb)  // мб можно в bool завернуть
     int count = CountCompares(numb);
     int countConst = CountCompares(numb);
     int start = 1;
-    while (start <= countConst)
+    while (start <= countConst) // ОН ТУТ БЕСПОЛЕЗЕН
     {
         if (countConst == 1)
         {
@@ -54,7 +54,7 @@ string TrueOrFalse(int numb)  // мб можно в bool завернуть
                 return "No";
             }
         }
-        else return "I dont know"; // я сдался :(  пятизначные цифры делает, но как это сделать в общем случае блин? Можно и дальше вручную прописывать все сравнения но должен же  быть иной способ
+        else return "I dont know"; // я сдался 
     }
     return "i dont know";
 
