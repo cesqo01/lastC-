@@ -72,8 +72,8 @@
 string Palendrom(int dig)
 {
     int mirror = Reverse(dig);
-    if (mirror == dig) return "Число является палиндромом";
-    else return "Число не является палиндромом";
+    if (mirror == dig) return  $"Число {dig} является палиндромом";
+    else return $"Число {dig} не является палиндромом";
 }
 
 int Reverse(int num)
