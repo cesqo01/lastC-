@@ -90,13 +90,13 @@ int Reverse(int num)
     return finishNum;
 }
 
-int Start(string message)
+int EnterNumber(string message)
 {
     Console.WriteLine(message);
     return Convert.ToInt32(Console.ReadLine());
 }
 
-int number = Start("Введите число");
+int number = EnterNumber("Введите число");
 Console.WriteLine(Palendrom(number));
 
 
