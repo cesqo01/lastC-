@@ -41,8 +41,8 @@ int CountTwoDig(int[] arr)
     return count;
 }
 
-int[] array = CreateArrayRndInt(10, 0, 100);
+int[] array = CreateArrayRndInt(10, 10, 150);
 PrintArray(array);
 int count = CountTwoDig(array);
-Console.WriteLine($" -> {count}");
+Console.WriteLine($" -> {count}"); //[10, 11, 12, 13, 14] -> 5
 

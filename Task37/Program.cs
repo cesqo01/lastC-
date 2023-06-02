@@ -38,11 +38,34 @@ int[] MultiplyElements(int[] arr)
     {
         newArr[i] = arr[i] * arr[arr.Length - 1 - i];
     }
-    if (arr.Length % 2 == 1) newArr[arr.Length / 2] = arr[arr.Length / 2];
+    if (arr.Length % 2 == 1) newArr[newLength - 1] = arr[arr.Length / 2];
     return newArr;
 }
 
-int[] array = CreateArrayRndInt(7, 0, 10);
+int[] array = CreateArrayRndInt(8, 0, 10);
 PrintArray(array);
 int[] array2 = MultiplyElements(array);
 PrintArray(array2);
+
+
+// //double[] CreateArrayRndDouble(int size, int min, int max, int round = 2)
+// {
+//     double[] arr = new double[size];
+//     Random rnd = new Random();
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         double num = rnd.NextDouble() * (max - min) + min;
+//         arr[i] = Math.Round(num, round);
+//     }
+       
+//     return arr;
+// }
+
+// void PrintArrayDouble(double[] arr, string sep = ",")
+// {
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         if (i < arr.Length - 1) Console.Write ($"{arr[i]}{sep} ");
+//         else Console.Write ($"{arr[i]}");
+//     }
+// }

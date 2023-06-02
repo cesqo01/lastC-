@@ -45,6 +45,7 @@ int EnterNumber(string message)
 int[] array = CreateArrayRndInt(10, -10, 10);
 PrintArray(array);
 int number = EnterNumber("Введите число");
-Console.WriteLine((IsArrayContainsNum(array,number)? "Содержит" : "He содержит"));
+Console.WriteLine((IsArrayContainsNum(array,number)
+                    ? "Содержит" : "He содержит"));
 
 
