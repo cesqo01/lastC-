@@ -71,3 +71,5 @@ double Difference(double max, double min)
 double[] array = CreateArrayRndDouble(10, 1, 30);
 PrintArrayDouble(array);
 Console.WriteLine($" => {MaxElem(array)} - {MinElem(array)} = {Difference(MaxElem(array), MinElem(array))}"); //[3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
+
+
